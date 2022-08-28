@@ -1,6 +1,8 @@
 import { Plugin } from "ittai/entities";
 import { findByProps } from "ittai/webpack";
-import { Command, registerCommand, unregisterAllCommands, CommandTypes, botMessage } from "ittai/commands";
+import { Command, registerCommand, unregisterAllCommands, CommandTypes } from "ittai/commands";
+import FartSettings from "./components/settings"
+import * as settings from "ittai/settings"
 
 const THE_FART = "https://raw.githubusercontent.com/ItzOnlyAnimal/AliuPlugins/main/fart.mp3"
 const sound = {fart: new Audio(THE_FART)};
@@ -21,7 +23,7 @@ const fartCmd: Command = {
     ],
 
     execute(opts, ctx) {
-        sound.fart.volume = 0.5;
+        sound.fart.volume = settings.get("volume", 0.5) || 0.5;
         sound.fart.play();
         msgs.sendMessage(ctx.channel.id, {
             content: (opts[0]) ? `<@${opts[0].value}> fart` : "fart"
@@ -31,11 +33,11 @@ const fartCmd: Command = {
 
 export default class Fart extends Plugin {
     start() {
+        this.setSettingsPanel(FartSettings);
         registerCommand(fartCmd);
     }
 
     stop() {
-        console.log("goodbye! eye-eye-eye!");
         unregisterAllCommands();
     }
 }
