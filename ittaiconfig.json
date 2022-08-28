@@ -3,8 +3,8 @@
         "name": "Fart",
         "version": "1.1.0",
         "license": "MIT",
-        "source": "https://github.com/ItzOnlyAnimal/sulfuric-acid",
-        "updateUrl": "https://github.com/ItzOnlyAnimal/sulfuric-acid/blob/builds/Fart.plugin.js",
+        "source": "https://github.com/aniiiiiimal/sulfuric-acid",
+        "updateUrl": "https://github.com/aniiiiiimal/sulfuric-acid/blob/builds/Fart.plugin.js",
         "main": "index.js",
         "author": "Animal",
         "description": "it returns"
