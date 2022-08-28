@@ -25,8 +25,8 @@ jobs:
           cp ./src/LICENSE* . || true
           rm -rf ./src
           git init
-          git config --local user.email "ittai@catvibers.me"
-          git config --local user.name "ittaibot"
+          git config --local user.email "balls@aniimalz.me"
+          git config --local user.name "Balls"
           git add ./*
           git commit -m "Build plugin" -a
       - name: Push changes

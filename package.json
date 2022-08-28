@@ -1,10 +1,12 @@
 {
-  "name": "ittai-example",
+  "name": "fart",
   "version": "1.0.0",
-  "description": "Example for an Ittai plugin with CI building using GitHub Actions or Woodpecker",
+  "description": "guhhhhhhhh",
   "main": "src/index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"test deez nuts\" && exit 1",
+    "build": "ittai --plugin=\"./\" --betterdiscord=./guh --powercordv2=./guh --goosemod=./guh/goosemod --production",
+    "bw": "ittai --plugin=\"./\" --powercordv2=\"../../../../kernel/powercord/plugins\" --watch"
   },
   "repository": {
     "type": "git",
