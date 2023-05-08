@@ -1,6 +1,6 @@
 # fart  
 
-its back
+Use Fart2 for Vencord (search plugins page!), Fart for Aliucord (the og!), or Fart for Enmity.
+if you use vendata go suck it lol there might be a version in the future
 
-
-Sound playing code taken from [moyai (gitlab)](https://gitlab.com/Cynosphere/cumcord-plugins) 
+this is old code from powercord/bd/ittai whatever
